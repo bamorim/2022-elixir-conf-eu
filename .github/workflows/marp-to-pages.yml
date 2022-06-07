@@ -34,13 +34,6 @@ jobs:
         env:
           MARP_USER: root:root
 
-      - name: Marp Build (presentation.pptx)
-        uses: docker://marpteam/marp-cli:v1.7.0
-        with:
-          args: presentation.md --allow-local-files -o build/presentation.pptx
-        env:
-          MARP_USER: root:root
-
       - name: Deploy preview
         if: ${{ github.event_name == 'pull_request' }}
         uses: rossjrw/pr-preview-action@v1

@@ -13,7 +13,7 @@ marp: true
 - Metrics
 - Traces
 
-And we will be talking alot about `:telemetry`
+And we will be talking a lot about `:telemetry`
 
 <!-- It's going to be intense -->
 <!-- Will throw a bunch of words -->
@@ -41,11 +41,11 @@ According to Wikipedia
 
 ---
 
-We want to
+We want to:
 
-- Understand whether the system is healthy or not
-- Debug what went or is going wrong during crisis
-- Find areas for improvement
+- Understand whether the system is healthy or not.
+- Debug what went or is going wrong during crisis.
+- Find areas for improvement.
 
 ---
 
@@ -55,7 +55,7 @@ We want to
 
 ---
 
-![bg fit](diagrams/diagram-3.svg)
+![bg fit](images/diagram-3.svg)
 
 ---
 
@@ -81,12 +81,12 @@ We want to
 
 # Event Logs
 
-- Things happen in your system
-- Logs are a way for externalization
+- Things happen in your system.
+- Logs are a way for externalization.
 - Examples:
-  - HTTP Request Handled
-  - Database Query Executed
-  - Background Job Executed
+  - HTTP Request Handled.
+  - Database Query Executed.
+  - Background Job Executed.
 
 ---
 
@@ -94,9 +94,9 @@ We want to
 
 Common data
 
-- Duration
-- Response Status Code
-- Path / Route
+- Duration.
+- Response Status Code.
+- Path / Route.
 
 ---
 
@@ -120,30 +120,30 @@ Common data
 
 ---
 
-![bg fit](diagrams/diagram-1.svg)
+![bg fit](images/diagram-1.svg)
 
 ---
 
 # `:telemetry` spans
 
-- Has a start and an end
+- Has a start and an end.
 - `:telemetry` defines a standard convention with 3 events:
-  - `:start` with `:system_time` measurement
-  - `:stop` and `:exception` with `:duration` measurement
+  - `:start` with `:system_time` measurement.
+  - `:stop` and `:exception` with `:duration` measurement.
 
 ---
 
 # `:telemetry` span example
 
-- `[:phoenix, :endpoint, :start]` when the request starts
-- `[:phoenix, :endpoint, :stop]` when the requests finishes successfully
-- `[:phoenix, :endpoint, :exception]` when an exception happens
+- `[:phoenix, :endpoint, :start]` when the request starts.
+- `[:phoenix, :endpoint, :stop]` when the requests finishes successfully.
+- `[:phoenix, :endpoint, :exception]` when an exception happens.
 
 ---
 
 # Logs are just `:telemetry` events that are externalized
 
-![bg fit right](diagrams/diagram-2.svg)
+![bg fit right](images/diagram-2.svg)
 
 ---
 
@@ -158,11 +158,11 @@ Common data
 
 # We can fix it
 
-- Disable default Phoenix Logger
-- Implement custom logger by listening to telemetry events
-- Implement custom log formatter using a structured format (Logfmt or JSON)
+- Disable default Phoenix Logger.
+- Implement custom logger by listening to telemetry events.
+- Implement custom log formatter using a structured format (Logfmt or JSON).
 
-![bg fit right](diagrams/diagram-2.svg)
+![bg fit right](images/diagram-2.svg)
 
 ---
 
@@ -226,7 +226,7 @@ TelemetryLogger.attach_loggers([
 
 ---
 
-# Grafana, Loki and LogQL are Awesome
+# Grafana, Loki and LogQL are awesome
 
 ![](images/complex-logql-query.png)
   
@@ -234,21 +234,21 @@ TelemetryLogger.attach_loggers([
 
 # Logs Tips
 
-- **Do** use structured logging
-- **Don't do** "print-debugging"
-- **Do** take advantage of log levels
-- **Do** allow your system to change log level without redeploying
-- **Don't** nest fields in your logs
+- **Do** use structured logging.
+- **Don't do** "print-debugging".
+- **Do** take advantage of log levels.
+- **Do** allow your system to change log level without redeploying.
+- **Don't** nest fields in your logs.
 
 ---
 
-# Logs help with debugging, but
+# Logs help with debugging, but...
 
 ## How to check if the system is healthy?
 
-- Requests/second
-- Average (and other percentiles) latency
-- Memory and CPU usage
+- Requests/second.
+- Average (and other percentiles) latency.
+- Memory and CPU usage.
 
 ---
 
@@ -272,8 +272,8 @@ TelemetryLogger.attach_loggers([
 # Metrics give you a high-level view of your system
 
 
-- Useful both on a technical level (e.g. memory usage) or domain level (e.g. total count of payments processed)
-- Great for visualizations
+- Useful both on a technical level (e.g. memory usage) or domain level (e.g. total count of payments processed).
+- Great for visualizations.
 
 ---
 
@@ -283,9 +283,9 @@ TelemetryLogger.attach_loggers([
 
 # Metrics are cheap and fast to process
 
-- Complexity is only dependent on number of timeseries and sample frequency
-- Great for alerting
-- Great for long term storage
+- Complexity is only dependent on number of timeseries and sample frequency.
+- Great for alerting.
+- Great for long term storage.
 
 ---
 
@@ -307,8 +307,8 @@ TelemetryLogger.attach_loggers([
 
 # Computing metrics from `:telemetry` events
 
-- `Plug.Telemetry` emits `[:phoenix, :endpoint, :stop]` events
-- We can count the number of events emitted and aggregate into the "total number of requests"
+- `Plug.Telemetry` emits `[:phoenix, :endpoint, :stop]` events.
+- We can count the number of events emitted and aggregate into the "total number of requests".
 
 ---
 
@@ -318,11 +318,11 @@ TelemetryLogger.attach_loggers([
 
 ## `Telemetry.Metrics`
 
-- Language for defining `:telemetry` based metrics
-- Define 5 different metric types (counter, distribution, last value, sum and summary)
-- Metric Reporters attach to events and aggregate them
+- Language for defining `:telemetry` based metrics.
+- Define 5 different metric types (counter, distribution, last value, sum and summary).
+- Metric Reporters attach to events and aggregate them.
 
-![bg right fit](diagrams/diagram-4.svg)
+![bg right fit](images/diagram-4.svg)
 
 ---
 
@@ -357,9 +357,9 @@ end
 
 # Limitations of LiveDashboard
 
-- Metrics are not persisted
-- If you have multiple apps it will be hard to consolidate visualizations and data
-- Only works for Elixir
+- Metrics are not persisted.
+- If you have multiple apps it will be hard to consolidate visualizations and data.
+- Only works for Elixir.
 
 ---
 
@@ -369,20 +369,20 @@ end
 
 # Prometheus
 
-- Open-source monitoring and alerting system
-- A multi-dimensional data model for time-series data
-- PromQL: query language
-- Data collection via **pull** over simple HTTP protocol
+- Open-source monitoring and alerting system.
+- A multi-dimensional data model for time-series data.
+- PromQL: query language.
+- Data collection via **pull** over simple HTTP protocol.
 
 ---
 
 # Pull vs Push
 
-- Prometheus is Pull, that is, Prometheus controls when to ask for metrics
-  - Improves back-pressure (if Prometheus is overloaded it can delay the sampling)
+- Prometheus is Pull, that is, Prometheus controls when to ask for metrics.
+  - Improves back-pressure (if Prometheus is overloaded it can delay the sampling).
 - Your app just need to:
-  - Keep last values for metrics
-  - Be able to report them when Prometheus request (in a specific format)
+  - Keep last values for metrics.
+  - Be able to report them when Prometheus request (in a specific format).
 
 ---
 
@@ -411,12 +411,12 @@ other_metric{label=value} 3.14
 
 # `PromEx`
 
-- Just another handler
-- Shared core with `TelemetryMetricsPrometheus`
-- Nice library of ready-made metrics and Grafana dashboards
+- Just another handler.
+- Shared core with `TelemetryMetricsPrometheus`.
+- Nice library of ready-made metrics and Grafana dashboards.
 - For something more minimalist, `TelemetryMetricsPrometheus` is probably your best bet.
 
-![bg right fit](diagrams/diagram-5.svg)
+![bg right fit](images/diagram-5.svg)
 
 ---
 
@@ -583,15 +583,15 @@ A trace where spans are executed in multiple different services.
 
 # Trace Model
 
-- A **trace** is a tree of **spans**
+- A **trace** is a tree of **spans**.
 - A **span**:
-  - Has a start and end timestamps
-  - Contained to one service
-  - Contains some metadata
-  - Belongs to a trace
-  - Can be either root or child of another span on the same trace
+  - Has a start and end timestamps.
+  - Contained to one service.
+  - Contains some metadata.
+  - Belongs to a trace.
+  - Can be either root or child of another span on the same trace.
 
-![bg fit right:33% 90%](diagrams/diagram-6.svg)
+![bg fit right:33% 90%](images/diagram-6.svg)
 
 ---
 
@@ -608,9 +608,9 @@ A trace where spans are executed in multiple different services.
 
 # OpenTelemetry Components
 
-- OpenTelemetry API: used on the code to be instrumented
-- OpenTelemetry SDK: the "runtime" to collect and process traces and spans
-- OpenTelemetry Exporter: responsible for sending data to the collector
+- OpenTelemetry API: used on the code to be instrumented.
+- OpenTelemetry SDK: the "runtime" to collect and process traces and spans.
+- OpenTelemetry Exporter: responsible for sending data to the collector.
 
 ![bg right:40% fit 95%](images/opentelemetry_components.png)
 
@@ -632,12 +632,12 @@ A trace where spans are executed in multiple different services.
 
 # Propagation
 
-- Traces have spans in multiple different services
-- Services need to be informed about the parent span when receiving a request
-- This is called propagation
-- Most used protocols
-  - Zipkin's B3
-  - W3C Trace Context (usually **default**)
+- Traces have spans in multiple different services.
+- Services need to be informed about the parent span when receiving a request.
+- This is called propagation.
+- Most used protocols:
+  - Zipkin's B3.
+  - W3C Trace Context (usually **default**).
 
 ![bg right:40% fit 95%](images/opentelemetry_propagation.png)
 
