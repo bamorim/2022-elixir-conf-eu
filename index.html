@@ -20,7 +20,7 @@
 <li>Metrics</li>
 <li>Traces</li>
 </ul>
-<p>And we will be talking alot about <code>:telemetry</code></p>
+<p>And we will be talking a lot about <code>:telemetry</code></p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3">
 <h1>Bernardo Amorim</h1>
@@ -37,18 +37,18 @@ inferred from knowledge of its external outputs.</p>
 </blockquote>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6">
-<p>We want to</p>
+<p>We want to:</p>
 <ul>
-<li>Understand whether the system is healthy or not</li>
-<li>Debug what went or is going wrong during crisis</li>
-<li>Find areas for improvement</li>
+<li>Understand whether the system is healthy or not.</li>
+<li>Debug what went or is going wrong during crisis.</li>
+<li>Find areas for improvement.</li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7">
 <h1>The Demo App for this presentation</h1>
 <h2><a href="https://github.com/bamorim/observable-elixir-daily">github.com/bamorim/observable-elixir-daily</a></h2>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-marpit-advanced-background="background"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;diagrams/diagram-3.svg&quot;);background-size:contain;"></figure></div></section></foreignObject><foreignObject width="1280" height="720"><section id="8" data-marpit-advanced-background="content"></section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-marpit-advanced-background="background"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;images/diagram-3.svg&quot;);background-size:contain;"></figure></div></section></foreignObject><foreignObject width="1280" height="720"><section id="8" data-marpit-advanced-background="content"></section>
 </foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section style="" data-marpit-advanced-background="pseudo"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9">
 <p><video src="./videos/demo-observable-elixir.webm" controls width="100%"></video></p>
 </section>
@@ -65,13 +65,13 @@ inferred from knowledge of its external outputs.</p>
 </foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section style="" data-marpit-advanced-background="pseudo"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12">
 <h1>Event Logs</h1>
 <ul>
-<li>Things happen in your system</li>
-<li>Logs are a way for externalization</li>
+<li>Things happen in your system.</li>
+<li>Logs are a way for externalization.</li>
 <li>Examples:
 <ul>
-<li>HTTP Request Handled</li>
-<li>Database Query Executed</li>
-<li>Background Job Executed</li>
+<li>HTTP Request Handled.</li>
+<li>Database Query Executed.</li>
+<li>Background Job Executed.</li>
 </ul>
 </li>
 </ul>
@@ -80,9 +80,9 @@ inferred from knowledge of its external outputs.</p>
 <h1>Metadata</h1>
 <p>Common data</p>
 <ul>
-<li>Duration</li>
-<li>Response Status Code</li>
-<li>Path / Route</li>
+<li>Duration.</li>
+<li>Response Status Code.</li>
+<li>Path / Route.</li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14">
@@ -98,15 +98,15 @@ inferred from knowledge of its external outputs.</p>
 <span class="hljs-variable">@type</span> measurements() :: map()
 </span></span></foreignObject></svg></code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-marpit-advanced-background="background"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;diagrams/diagram-1.svg&quot;);background-size:contain;"></figure></div></section></foreignObject><foreignObject width="1280" height="720"><section id="17" data-marpit-advanced-background="content"></section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-marpit-advanced-background="background"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;images/diagram-1.svg&quot;);background-size:contain;"></figure></div></section></foreignObject><foreignObject width="1280" height="720"><section id="17" data-marpit-advanced-background="content"></section>
 </foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section style="" data-marpit-advanced-background="pseudo"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18">
 <h1><code>:telemetry</code> spans</h1>
 <ul>
-<li>Has a start and an end</li>
+<li>Has a start and an end.</li>
 <li><code>:telemetry</code> defines a standard convention with 3 events:
 <ul>
-<li><code>:start</code> with <code>:system_time</code> measurement</li>
-<li><code>:stop</code> and <code>:exception</code> with <code>:duration</code> measurement</li>
+<li><code>:start</code> with <code>:system_time</code> measurement.</li>
+<li><code>:stop</code> and <code>:exception</code> with <code>:duration</code> measurement.</li>
 </ul>
 </li>
 </ul>
@@ -114,23 +114,23 @@ inferred from knowledge of its external outputs.</p>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19">
 <h1><code>:telemetry</code> span example</h1>
 <ul>
-<li><code>[:phoenix, :endpoint, :start]</code> when the request starts</li>
-<li><code>[:phoenix, :endpoint, :stop]</code> when the requests finishes successfully</li>
-<li><code>[:phoenix, :endpoint, :exception]</code> when an exception happens</li>
+<li><code>[:phoenix, :endpoint, :start]</code> when the request starts.</li>
+<li><code>[:phoenix, :endpoint, :stop]</code> when the requests finishes successfully.</li>
+<li><code>[:phoenix, :endpoint, :exception]</code> when an exception happens.</li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-marpit-advanced-background="background" data-marpit-advanced-background-split="right" style="--marpit-advanced-background-split:50%;"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;diagrams/diagram-2.svg&quot;);background-size:contain;"></figure></div></section></foreignObject><foreignObject width="50%" height="720"><section id="20" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right" style="--marpit-advanced-background-split:50%;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-marpit-advanced-background="background" data-marpit-advanced-background-split="right" style="--marpit-advanced-background-split:50%;"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;images/diagram-2.svg&quot;);background-size:contain;"></figure></div></section></foreignObject><foreignObject width="50%" height="720"><section id="20" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right" style="--marpit-advanced-background-split:50%;">
 <h1>Logs are just <code>:telemetry</code> events that are externalized</h1>
 </section>
 </foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section style="" data-marpit-advanced-background="pseudo"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-marpit-advanced-background="background" data-marpit-advanced-background-split="right" style="--marpit-advanced-background-split:50%;"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;images/phoenix-logger-problem.png&quot;);background-size:contain;"></figure></div></section></foreignObject><foreignObject width="50%" height="720"><section id="21" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right" style="--marpit-advanced-background-split:50%;">
 <h1>My problem with Phoenix default logging</h1>
 </section>
-</foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section style="" data-marpit-advanced-background="pseudo"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-marpit-advanced-background="background" data-marpit-advanced-background-split="right" style="--marpit-advanced-background-split:50%;"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;diagrams/diagram-2.svg&quot;);background-size:contain;"></figure></div></section></foreignObject><foreignObject width="50%" height="720"><section id="22" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right" style="--marpit-advanced-background-split:50%;">
+</foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section style="" data-marpit-advanced-background="pseudo"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-marpit-advanced-background="background" data-marpit-advanced-background-split="right" style="--marpit-advanced-background-split:50%;"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;images/diagram-2.svg&quot;);background-size:contain;"></figure></div></section></foreignObject><foreignObject width="50%" height="720"><section id="22" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right" style="--marpit-advanced-background-split:50%;">
 <h1>We can fix it</h1>
 <ul>
-<li>Disable default Phoenix Logger</li>
-<li>Implement custom logger by listening to telemetry events</li>
-<li>Implement custom log formatter using a structured format (Logfmt or JSON)</li>
+<li>Disable default Phoenix Logger.</li>
+<li>Implement custom logger by listening to telemetry events.</li>
+<li>Implement custom log formatter using a structured format (Logfmt or JSON).</li>
 </ul>
 </section>
 </foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section style="" data-marpit-advanced-background="pseudo"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="23">
@@ -179,26 +179,26 @@ TelemetryLogger.attach_loggers([
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-marpit-advanced-background="background"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;images/structured-logs-in-grafana.png&quot;);background-size:100%;"></figure></div></section></foreignObject><foreignObject width="1280" height="720"><section id="27" data-marpit-advanced-background="content"></section>
 </foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section style="" data-marpit-advanced-background="pseudo"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="28">
-<h1>Grafana, Loki and LogQL are Awesome</h1>
+<h1>Grafana, Loki and LogQL are awesome</h1>
 <p><img src="images/complex-logql-query.png" alt="" /></p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="29">
 <h1>Logs Tips</h1>
 <ul>
-<li><strong>Do</strong> use structured logging</li>
-<li><strong>Don't do</strong> &quot;print-debugging&quot;</li>
-<li><strong>Do</strong> take advantage of log levels</li>
-<li><strong>Do</strong> allow your system to change log level without redeploying</li>
-<li><strong>Don't</strong> nest fields in your logs</li>
+<li><strong>Do</strong> use structured logging.</li>
+<li><strong>Don't do</strong> &quot;print-debugging&quot;.</li>
+<li><strong>Do</strong> take advantage of log levels.</li>
+<li><strong>Do</strong> allow your system to change log level without redeploying.</li>
+<li><strong>Don't</strong> nest fields in your logs.</li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="30">
-<h1>Logs help with debugging, but</h1>
+<h1>Logs help with debugging, but...</h1>
 <h2>How to check if the system is healthy?</h2>
 <ul>
-<li>Requests/second</li>
-<li>Average (and other percentiles) latency</li>
-<li>Memory and CPU usage</li>
+<li>Requests/second.</li>
+<li>Average (and other percentiles) latency.</li>
+<li>Memory and CPU usage.</li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-marpit-advanced-background="background" data-marpit-advanced-background-split="right" style="--marpit-advanced-background-split:55%;"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;images/breathe-in-breathe-out.gif&quot;);"></figure></div></section></foreignObject><foreignObject width="45%" height="720"><section id="31" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right" style="--marpit-advanced-background-split:55%;">
@@ -217,17 +217,17 @@ TelemetryLogger.attach_loggers([
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="33">
 <h1>Metrics give you a high-level view of your system</h1>
 <ul>
-<li>Useful both on a technical level (e.g. memory usage) or domain level (e.g. total count of payments processed)</li>
-<li>Great for visualizations</li>
+<li>Useful both on a technical level (e.g. memory usage) or domain level (e.g. total count of payments processed).</li>
+<li>Great for visualizations.</li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-marpit-advanced-background="background"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;images/grafana-dashboard-example.png&quot;);background-size:contain;"></figure></div></section></foreignObject><foreignObject width="1280" height="720"><section id="34" data-marpit-advanced-background="content"></section>
 </foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section style="" data-marpit-advanced-background="pseudo"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="35">
 <h1>Metrics are cheap and fast to process</h1>
 <ul>
-<li>Complexity is only dependent on number of timeseries and sample frequency</li>
-<li>Great for alerting</li>
-<li>Great for long term storage</li>
+<li>Complexity is only dependent on number of timeseries and sample frequency.</li>
+<li>Great for alerting.</li>
+<li>Great for long term storage.</li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="36">
@@ -246,17 +246,17 @@ TelemetryLogger.attach_loggers([
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="37">
 <h1>Computing metrics from <code>:telemetry</code> events</h1>
 <ul>
-<li><code>Plug.Telemetry</code> emits <code>[:phoenix, :endpoint, :stop]</code> events</li>
-<li>We can count the number of events emitted and aggregate into the &quot;total number of requests&quot;</li>
+<li><code>Plug.Telemetry</code> emits <code>[:phoenix, :endpoint, :stop]</code> events.</li>
+<li>We can count the number of events emitted and aggregate into the &quot;total number of requests&quot;.</li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-marpit-advanced-background="background"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;images/telemetry_metrics.png&quot;);"></figure></div></section></foreignObject><foreignObject width="1280" height="720"><section id="38" data-marpit-advanced-background="content"></section>
-</foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section style="" data-marpit-advanced-background="pseudo"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-marpit-advanced-background="background" data-marpit-advanced-background-split="right" style="--marpit-advanced-background-split:50%;"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;diagrams/diagram-4.svg&quot;);background-size:contain;"></figure></div></section></foreignObject><foreignObject width="50%" height="720"><section id="39" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right" style="--marpit-advanced-background-split:50%;">
+</foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section style="" data-marpit-advanced-background="pseudo"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-marpit-advanced-background="background" data-marpit-advanced-background-split="right" style="--marpit-advanced-background-split:50%;"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;images/diagram-4.svg&quot;);background-size:contain;"></figure></div></section></foreignObject><foreignObject width="50%" height="720"><section id="39" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right" style="--marpit-advanced-background-split:50%;">
 <h2><code>Telemetry.Metrics</code></h2>
 <ul>
-<li>Language for defining <code>:telemetry</code> based metrics</li>
-<li>Define 5 different metric types (counter, distribution, last value, sum and summary)</li>
-<li>Metric Reporters attach to events and aggregate them</li>
+<li>Language for defining <code>:telemetry</code> based metrics.</li>
+<li>Define 5 different metric types (counter, distribution, last value, sum and summary).</li>
+<li>Metric Reporters attach to events and aggregate them.</li>
 </ul>
 </section>
 </foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section style="" data-marpit-advanced-background="pseudo"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-marpit-advanced-background="background"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;images/phoenix_live_dashboard.png&quot;);"></figure></div></section></foreignObject><foreignObject width="1280" height="720"><section id="40" data-marpit-advanced-background="content"></section>
@@ -286,33 +286,33 @@ TelemetryLogger.attach_loggers([
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="42">
 <h1>Limitations of LiveDashboard</h1>
 <ul>
-<li>Metrics are not persisted</li>
-<li>If you have multiple apps it will be hard to consolidate visualizations and data</li>
-<li>Only works for Elixir</li>
+<li>Metrics are not persisted.</li>
+<li>If you have multiple apps it will be hard to consolidate visualizations and data.</li>
+<li>Only works for Elixir.</li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-marpit-advanced-background="background"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;images/prometheus.png&quot;);"></figure></div></section></foreignObject><foreignObject width="1280" height="720"><section id="43" data-marpit-advanced-background="content"></section>
 </foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section style="" data-marpit-advanced-background="pseudo"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="44">
 <h1>Prometheus</h1>
 <ul>
-<li>Open-source monitoring and alerting system</li>
-<li>A multi-dimensional data model for time-series data</li>
-<li>PromQL: query language</li>
-<li>Data collection via <strong>pull</strong> over simple HTTP protocol</li>
+<li>Open-source monitoring and alerting system.</li>
+<li>A multi-dimensional data model for time-series data.</li>
+<li>PromQL: query language.</li>
+<li>Data collection via <strong>pull</strong> over simple HTTP protocol.</li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="45">
 <h1>Pull vs Push</h1>
 <ul>
-<li>Prometheus is Pull, that is, Prometheus controls when to ask for metrics
+<li>Prometheus is Pull, that is, Prometheus controls when to ask for metrics.
 <ul>
-<li>Improves back-pressure (if Prometheus is overloaded it can delay the sampling)</li>
+<li>Improves back-pressure (if Prometheus is overloaded it can delay the sampling).</li>
 </ul>
 </li>
 <li>Your app just need to:
 <ul>
-<li>Keep last values for metrics</li>
-<li>Be able to report them when Prometheus request (in a specific format)</li>
+<li>Keep last values for metrics.</li>
+<li>Be able to report them when Prometheus request (in a specific format).</li>
 </ul>
 </li>
 </ul>
@@ -330,12 +330,12 @@ other_metric{label=value} 3.14
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-marpit-advanced-background="background"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;images/telemetry_metrics_prometheus.png&quot;);"></figure></div></section></foreignObject><foreignObject width="1280" height="720"><section id="48" data-marpit-advanced-background="content"></section>
 </foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section style="" data-marpit-advanced-background="pseudo"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-marpit-advanced-background="background"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;images/prom_ex.png&quot;);"></figure></div></section></foreignObject><foreignObject width="1280" height="720"><section id="49" data-marpit-advanced-background="content"></section>
-</foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section style="" data-marpit-advanced-background="pseudo"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-marpit-advanced-background="background" data-marpit-advanced-background-split="right" style="--marpit-advanced-background-split:50%;"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;diagrams/diagram-5.svg&quot;);background-size:contain;"></figure></div></section></foreignObject><foreignObject width="50%" height="720"><section id="50" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right" style="--marpit-advanced-background-split:50%;">
+</foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section style="" data-marpit-advanced-background="pseudo"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-marpit-advanced-background="background" data-marpit-advanced-background-split="right" style="--marpit-advanced-background-split:50%;"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;images/diagram-5.svg&quot;);background-size:contain;"></figure></div></section></foreignObject><foreignObject width="50%" height="720"><section id="50" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right" style="--marpit-advanced-background-split:50%;">
 <h1><code>PromEx</code></h1>
 <ul>
-<li>Just another handler</li>
-<li>Shared core with <code>TelemetryMetricsPrometheus</code></li>
-<li>Nice library of ready-made metrics and Grafana dashboards</li>
+<li>Just another handler.</li>
+<li>Shared core with <code>TelemetryMetricsPrometheus</code>.</li>
+<li>Nice library of ready-made metrics and Grafana dashboards.</li>
 <li>For something more minimalist, <code>TelemetryMetricsPrometheus</code> is probably your best bet.</li>
 </ul>
 </section>
@@ -456,17 +456,17 @@ a program execution.</p>
 <h1>Distributed Tracing</h1>
 <p>A trace where spans are executed in multiple different services.</p>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-marpit-advanced-background="background" data-marpit-advanced-background-split="right" style="--marpit-advanced-background-split:33%;"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;diagrams/diagram-6.svg&quot;);background-size:90%;"></figure></div></section></foreignObject><foreignObject width="67%" height="720"><section id="63" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right" style="--marpit-advanced-background-split:33%;">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-marpit-advanced-background="background" data-marpit-advanced-background-split="right" style="--marpit-advanced-background-split:33%;"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;images/diagram-6.svg&quot;);background-size:90%;"></figure></div></section></foreignObject><foreignObject width="67%" height="720"><section id="63" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right" style="--marpit-advanced-background-split:33%;">
 <h1>Trace Model</h1>
 <ul>
-<li>A <strong>trace</strong> is a tree of <strong>spans</strong></li>
+<li>A <strong>trace</strong> is a tree of <strong>spans</strong>.</li>
 <li>A <strong>span</strong>:
 <ul>
-<li>Has a start and end timestamps</li>
-<li>Contained to one service</li>
-<li>Contains some metadata</li>
-<li>Belongs to a trace</li>
-<li>Can be either root or child of another span on the same trace</li>
+<li>Has a start and end timestamps.</li>
+<li>Contained to one service.</li>
+<li>Contains some metadata.</li>
+<li>Belongs to a trace.</li>
+<li>Can be either root or child of another span on the same trace.</li>
 </ul>
 </li>
 </ul>
@@ -478,9 +478,9 @@ a program execution.</p>
 </foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section style="" data-marpit-advanced-background="pseudo"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-marpit-advanced-background="background" data-marpit-advanced-background-split="right" style="--marpit-advanced-background-split:40%;"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;images/opentelemetry_components.png&quot;);background-size:95%;"></figure></div></section></foreignObject><foreignObject width="60%" height="720"><section id="66" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right" style="--marpit-advanced-background-split:40%;">
 <h1>OpenTelemetry Components</h1>
 <ul>
-<li>OpenTelemetry API: used on the code to be instrumented</li>
-<li>OpenTelemetry SDK: the &quot;runtime&quot; to collect and process traces and spans</li>
-<li>OpenTelemetry Exporter: responsible for sending data to the collector</li>
+<li>OpenTelemetry API: used on the code to be instrumented.</li>
+<li>OpenTelemetry SDK: the &quot;runtime&quot; to collect and process traces and spans.</li>
+<li>OpenTelemetry Exporter: responsible for sending data to the collector.</li>
 </ul>
 </section>
 </foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section style="" data-marpit-advanced-background="pseudo"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-marpit-advanced-background="background"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;images/opentelemetry_api.png&quot;);"></figure></div></section></foreignObject><foreignObject width="1280" height="720"><section id="67" data-marpit-advanced-background="content"></section>
@@ -489,13 +489,13 @@ a program execution.</p>
 </foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section style="" data-marpit-advanced-background="pseudo"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-marpit-advanced-background="background" data-marpit-advanced-background-split="right" style="--marpit-advanced-background-split:40%;"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;images/opentelemetry_propagation.png&quot;);background-size:95%;"></figure></div></section></foreignObject><foreignObject width="60%" height="720"><section id="70" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right" style="--marpit-advanced-background-split:40%;">
 <h1>Propagation</h1>
 <ul>
-<li>Traces have spans in multiple different services</li>
-<li>Services need to be informed about the parent span when receiving a request</li>
-<li>This is called propagation</li>
-<li>Most used protocols
+<li>Traces have spans in multiple different services.</li>
+<li>Services need to be informed about the parent span when receiving a request.</li>
+<li>This is called propagation.</li>
+<li>Most used protocols:
 <ul>
-<li>Zipkin's B3</li>
-<li>W3C Trace Context (usually <strong>default</strong>)</li>
+<li>Zipkin's B3.</li>
+<li>W3C Trace Context (usually <strong>default</strong>).</li>
 </ul>
 </li>
 </ul>
