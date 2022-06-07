@@ -1,0 +1,21 @@
+{
+  "name": "2022-elixir-conf-eu",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "serve": "marp -s . --html true",
+    "build": "npm-run-all build:diagrams --parallel build:slides:*",
+    "build:diagrams": "mmdc -i diagrams.md -o images/diagram.svg",
+    "build:slides:pdf": "marp presentation.md --allow-local-files -o local-presentation.pdf",
+    "build:slides:html": "marp presentation.md --html -o local-presentation.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mermaid-js/mermaid-cli": "^9.1.2",
+    "npm-run-all": "^4.1.5"
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "^2.0.3"
+  }
+}
